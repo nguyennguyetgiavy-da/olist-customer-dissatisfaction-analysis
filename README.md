@@ -69,23 +69,23 @@ Source: Brazilian E-Commerce Public Dataset by Olist
 
 ### Executive Overview
 
-![Executive Overview](images/Page 1 - Overview (Olist).jpg)
+![Executive Overview](images/page1_overview.jpg)
 
 ### Customer Satisfaction
 
-![Customer Satisfaction](images/Page 2 - Customer Satisfaction (Olist).jpg)
+![Customer Satisfaction](images/page2_customer_satisfaction.jpg)
 
 ### Delivery Performance
 
-![Delivery Performance](images/Page 3 - Delivery Performance (Olist).jpg)
+![Delivery Performance](images/page3_delivery_performance.jpg)
 
 ### Seller & Product Quality
 
-![Seller & Product Quality](images/Page 4 - Seller & Product Quality (Olist).jpg)
+![Seller & Product Quality](images/page4_seller_product_quality.jpg)
 
 ### Recommendations
 
-![Recommendations](images/Page 5 - Recommendations (Olist).jpg)
+![Recommendations](images/page5_recommendations.jpg)
 
 ---
 
