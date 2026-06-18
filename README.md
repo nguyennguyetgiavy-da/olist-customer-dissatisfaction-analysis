@@ -91,5 +91,5 @@ Source: Brazilian E-Commerce Public Dataset by Olist
 
 ## Project Files
 
-- **Olist_Customer_Dissatisfaction.pbix** – Power BI dashboard file.
-- **Olist_Report.pdf** – Exported dashboard report for quick viewing.
+- Olist_Report.pdf – Dashboard report for quick viewing.
+- Power BI source file (.pbix) available upon request.
