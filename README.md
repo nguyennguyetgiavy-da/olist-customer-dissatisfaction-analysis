@@ -2,9 +2,13 @@
 
 ## Project Overview
 
-This project analyzes customer dissatisfaction on the Olist e-commerce platform using Power BI.
+A 5-page Power BI executive dashboard analyzing customer dissatisfaction on the Olist platform — built on order, delivery, seller, and review-level data to identify which operational factors most strongly associated with negative customer experiences.
 
-The objective is to identify the key drivers of negative customer experiences and provide actionable business recommendations to improve customer satisfaction.
+---
+
+## Business Problem
+
+14.7% of orders on Olist receive a negative review (1–2★), yet the underlying drivers of dissatisfaction are not clearly understood. Without isolating which factors — delivery delays, specific sellers/categories, or regional logistics gaps — contribute most, improvement efforts risk being unfocused and low-impact.
 
 ---
 
@@ -20,11 +24,13 @@ The objective is to identify the key drivers of negative customer experiences an
 
 ## Dataset
 
-Source: Brazilian E-Commerce Public Dataset by Olist
+**Source:** Brazilian E-Commerce Public Dataset by Olist — real, anonymized transaction data from a Brazilian multi-seller marketplace.
 
-- Orders: 99k+
-- Customers: 96k+
-- Period: Sep 2016 – Aug 2018
+The analysis integrates data from 8 relational tables, including orders, order items, payments, reviews, customers, sellers, products, and category translations.
+
+- **Scale:** 99k+ orders and 96k+ unique customers
+- **Coverage:** Nationwide transactions across Brazil
+- **Analysis period:** Sep 2016 – Aug 2018 (Sep–Oct 2018 excluded due to incomplete data)
 
 ---
 
@@ -49,9 +55,9 @@ Source: Brazilian E-Commerce Public Dataset by Olist
 
 ## Key Findings
 
-- Delivery delays are the strongest driver of customer dissatisfaction, with negative review rates rising significantly once delivery times exceed 25 days.
-- Customer dissatisfaction is concentrated among a relatively small group of sellers and product categories.
-- North and Northeast regions consistently show poorer delivery performance and higher dissatisfaction rates compared to benchmark states such as São Paulo (SP) and Paraná (PR).
+- Delivery delays are the strongest driver of customer dissatisfaction — orders delivered after 35 days show approximately 9.5× higher negative review rates than orders delivered within 7 days.
+- Customer dissatisfaction is concentrated among a relatively small group of sellers and product categories, indicating that issues are not evenly distributed across the platform.
+- North and Northeast regions consistently lag behind benchmark states such as São Paulo (SP) and Paraná (PR) in both delivery performance and customer satisfaction.
 
 ---
 
