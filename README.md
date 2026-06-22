@@ -57,7 +57,7 @@ The analysis integrates data from 8 relational tables, including orders, order i
 
 - Delivery delays are the strongest driver of customer dissatisfaction — orders delivered after 35 days show approximately 9.5× higher negative review rates than orders delivered within 7 days.
 - Customer dissatisfaction is concentrated among a relatively small group of sellers and product categories, indicating that issues are not evenly distributed across the platform.
-- North and Northeast regions consistently lag behind benchmark states such as São Paulo (SP) and Paraná (PR) in both delivery performance and customer satisfaction.
+- North and Northeast regions consistently lag behind São Paulo (SP), the platform's delivery-performance benchmark, in both delivery performance and customer satisfaction.
 
 ---
 
@@ -92,6 +92,20 @@ The analysis integrates data from 8 relational tables, including orders, order i
 ### Recommendations
 
 ![Recommendations](images/page5_recommendations.jpg)
+
+---
+
+## Technical Highlights
+
+- Built a star-schema data model integrating 8 relational tables across orders, order items, payments, reviews, customers, sellers, products, and category translations.
+
+- Developed custom DAX measures for Negative Review Rate, Late Delivery Rate, Freight-to-Price Ratio, and seller/category risk scoring.
+
+- Implemented risk-tiering logic with minimum-volume thresholds to reduce false positives when identifying high-risk sellers (≥50 orders) and product categories (≥100 orders).
+
+- Designed benchmark-based regional performance analysis comparing underperforming states (e.g., AL, MA, CE) against São Paulo (SP), the platform's delivery-performance benchmark with a 5.9% late-delivery rate.
+
+- Applied an Impact-vs-Effort prioritization framework to translate analytical findings into actionable business recommendations.
 
 ---
 
