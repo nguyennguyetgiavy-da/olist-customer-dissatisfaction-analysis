@@ -17,7 +17,7 @@ A 5-page Power BI executive dashboard analyzing customer dissatisfaction on the 
 - What factors drive customer dissatisfaction?
 - How does delivery performance impact negative customer reviews?
 - How do seller performance and product quality influence customer satisfaction?
-- Which operational issues contribute most to customer dissatisfaction?
+- Which sellers, product categories, and regions contribute most to negative customer experiences?
 - What actions should Olist prioritize to improve customer experience?
 
 ---
@@ -56,8 +56,10 @@ The analysis integrates data from 8 relational tables, including orders, order i
 ## Key Findings
 
 - Delivery delays are the strongest driver of customer dissatisfaction — orders delivered after 35 days show approximately 9.5× higher negative review rates than orders delivered within 7 days.
-- Customer dissatisfaction is concentrated among a relatively small group of sellers and product categories, indicating that issues are not evenly distributed across the platform.
-- North and Northeast regions consistently lag behind São Paulo (SP), the platform's delivery-performance benchmark, in both delivery performance and customer satisfaction.
+  
+- Customer dissatisfaction is concentrated among a relatively small group of sellers and product categories, with several segments exhibiting negative review rates above 20% compared with the 14.7% platform average.
+  
+- North and Northeast regions consistently lag behind São Paulo (SP), the platform's delivery-performance benchmark (%.9% negative review rate), in both delivery performance and customer satisfaction.
 
 ---
 
@@ -97,7 +99,7 @@ The analysis integrates data from 8 relational tables, including orders, order i
 
 ## Technical Highlights
 
-- Built a star-schema data model integrating 8 relational tables across orders, order items, payments, reviews, customers, sellers, products, and category translations.
+- Built a star-schema analytical model to support cross-functional analysis across orders, reviews, sellers, products, payments, and logistics data.
 
 - Developed custom DAX measures for Negative Review Rate, Late Delivery Rate, Freight-to-Price Ratio, and seller/category risk scoring.
 
