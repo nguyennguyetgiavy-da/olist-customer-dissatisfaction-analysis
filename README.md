@@ -2,18 +2,18 @@
 
 ## Project Overview
 
-A 5-page Power BI executive dashboard analyzing customer dissatisfaction on the Olist platform — built on order, delivery, seller, and review-level data to identify which operational factors most strongly associated with negative customer experiences.
+A 6-page Power BI executive dashboard analyzing customer dissatisfaction on the Olist platform — identifying platform-wide operational drivers of negative customer experiences and incorporates customer value segmentation to prioritize improvement initiatives toward the customers with the greatest business impact.
 
 ---
 
 ## Business Problem
 
-14.7% of orders on Olist receive a negative review (1–2★), yet the underlying drivers of dissatisfaction are not clearly understood. Without isolating which factors — delivery delays, specific sellers/categories, or regional logistics gaps — contribute most, improvement efforts risk being unfocused and low-impact.
+14.7% of orders on Olist receive a negative review (1–2★), yet the underlying drivers of dissatisfaction are not clearly understood. Moreover, improvement initiatives are often applied uniformly across the customer base without distinguishing high-value customer groups that may warrant greater investment. Without identifying both priority customer segments and the operational factors driving dissatisfaction, customer experience initiatives risk being unfocused and low-impact.
 
 ---
 
 ## Business Questions
-
+- Which customer segments should Olist prioritize for customer experience improvement?
 - What factors drive customer dissatisfaction?
 - How does delivery performance impact negative customer reviews?
 - How do seller performance and product quality influence customer satisfaction?
@@ -46,6 +46,7 @@ The analysis integrates data from 8 relational tables, including orders, order i
 
 - Negative Review Rate (1–2★ Reviews)
 - Average Review Score
+- Customer Segment (Loyal-at-Risk / High-Value Prospect / Standard / Lapsed)
 - Late Delivery Rate
 - Average Delivery Days
 - Freight-to-Price Ratio
