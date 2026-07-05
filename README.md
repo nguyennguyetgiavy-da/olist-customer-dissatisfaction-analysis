@@ -60,7 +60,7 @@ The analysis integrates data from 8 relational tables, including orders, order i
   
 - Customer dissatisfaction is concentrated among a relatively small group of sellers and product categories, with several segments exhibiting negative review rates above 20% compared with the 14.7% platform average.
   
-- North and Northeast regions consistently lag behind São Paulo (SP), the platform's delivery-performance benchmark (5.9% negative review rate), in both delivery performance and customer satisfaction.
+- North and Northeast regions consistently lag behind São Paulo (SP), the platform's delivery-performance benchmark (5.9% late delivery rate), in both delivery performance and customer satisfaction.
 
 ---
 
