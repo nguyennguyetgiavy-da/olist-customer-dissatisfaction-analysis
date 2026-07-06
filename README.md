@@ -1,24 +1,24 @@
-# Customer Dissatisfaction Analysis in Olist E-commerce
+# Olist Customer Dissatisfaction Analysis
 
 ## Project Overview
 
-A 6-page Power BI executive dashboard analyzing customer dissatisfaction on the Olist platform — identifying platform-wide operational drivers of negative customer experiences and incorporates customer value segmentation to prioritize improvement initiatives toward the customers with the greatest business impact.
+A 6-page Power BI executive dashboard analyzing customer dissatisfaction on the Olist platform — identifying the operational drivers of negative customer experiences and applying customer value segmentation to prioritize improvement initiatives for the customer groups with the greatest business impact.
 
 ---
 
 ## Business Problem
 
-14.7% of orders on Olist receive a negative review (1–2★), yet the underlying drivers of dissatisfaction are not clearly understood. Moreover, improvement initiatives are often applied uniformly across the customer base without distinguishing high-value customer groups that may warrant greater investment. Without identifying both priority customer segments and the operational factors driving dissatisfaction, customer experience initiatives risk being unfocused and low-impact.
+14.7% of orders on Olist receive a negative review (1–2★), yet the underlying drivers of dissatisfaction are not clearly understood. At the same time, not all dissatisfied customers have the same business value. Without identifying both the operational drivers of dissatisfaction and the customer segments where poor experiences create the greatest business impact, improvement initiatives risk being unfocused and low-impact.
 
 ---
 
 ## Business Questions
 - Which customer segments should Olist prioritize for customer experience improvement?
-- What factors drive customer dissatisfaction?
+- Which operational factors drive customer dissatisfaction?
 - How does delivery performance impact negative customer reviews?
 - How do seller performance and product quality influence customer satisfaction?
 - Which sellers, product categories, and regions contribute most to negative customer experiences?
-- What actions should Olist prioritize to improve customer experience?
+- Which initiatives should Olist prioritize to improve customer experience?
 
 ---
 
@@ -46,32 +46,30 @@ The analysis integrates data from 8 relational tables, including orders, order i
 
 - Negative Review Rate (1–2★ Reviews)
 - Average Review Score
-- Customer Segment (Loyal-at-Risk / High-Value Prospect / Standard / Lapsed)
+- Repeat Purchase Rate
 - Late Delivery Rate
-- Average Delivery Days
-- Freight-to-Price Ratio
 - Total Orders
+- Total Revenue
 
 ---
 
 ## Key Findings
 
-- Delivery delays are the strongest driver of customer dissatisfaction — orders delivered after 35 days show approximately 9.5× higher negative review rates than orders delivered within 7 days.
-  
-- Customer dissatisfaction is concentrated among a relatively small group of sellers and product categories, with several segments exhibiting negative review rates above 20% compared with the 14.7% platform average.
-  
-- North and Northeast regions consistently lag behind São Paulo (SP), the platform's delivery-performance benchmark (5.9% late delivery rate), in both delivery performance and customer satisfaction.
+- **Delivery delays are the strongest driver of customer dissatisfaction** — orders delivered after 35 days show a 9.5× higher negative review rate than those delivered within 7 days, with over 11,600 orders exceeding the 21-day delivery risk threshold.
+
+- **Customer dissatisfaction is concentrated among a relatively small group of sellers and product categories.** Customer value segmentation further identifies high-priority customer segments that account for 48.2% of platform revenue while representing only 21% of customers. These segments exhibit distinct dissatisfaction patterns that require differentiated remediation strategies.
+
+- **North and Northeast regions consistently lag behind São Paulo (SP)**, the platform's delivery-performance benchmark (5.9% late delivery rate), in both delivery performance and customer satisfaction, indicating structural logistics gaps.
 
 ---
 
 ## Business Recommendations
 
-1. Strengthen delivery SLA management through early-warning mechanisms and proactive carrier capacity planning during peak periods.
+1. **Strengthen delivery reliability** through proactive SLA monitoring, early-warning mechanisms, and carrier capacity planning during peak periods.
 
-2. Manage high-risk sellers and product categories through performance monitoring, service quality improvement initiatives, and greater transparency in shipping costs.
+2. **Improve seller and product quality management** through performance monitoring while tailoring remediation strategies for high-priority customer segments.
 
-3. Invest in logistics capabilities in the North and Northeast region through expanded carrier partnerships and enhanced fulfillment capacity.
-
+3. **Invest in logistics capabilities across the North and Northeast regions** through expanded carrier partnerships and enhanced fulfillment capacity.
 ---
 
 ## Dashboard Preview
@@ -80,35 +78,41 @@ The analysis integrates data from 8 relational tables, including orders, order i
 
 ![Executive Overview](images/page1_overview.jpg)
 
+### Customer Value Segmentation
+
+![Customer Value Segmentation](images/page2_customer_value_segmentation.jpg)
+
 ### Customer Satisfaction
 
-![Customer Satisfaction](images/page2_customer_satisfaction.jpg)
+![Customer Satisfaction](images/page3_customer_satisfaction.jpg)
 
 ### Delivery Performance
 
-![Delivery Performance](images/page3_delivery_performance.jpg)
+![Delivery Performance](images/page4_delivery_performance.jpg)
 
 ### Seller & Product Quality
 
-![Seller & Product Quality](images/page4_seller_product_quality.jpg)
+![Seller & Product Quality](images/page5_seller_product_quality.jpg)
 
 ### Recommendations
 
-![Recommendations](images/page5_recommendations.jpg)
+![Recommendations](images/page6_recommendations.jpg)
 
 ---
 
 ## Technical Highlights
 
-- Built a star-schema analytical model to support cross-functional analysis across orders, reviews, sellers, products, payments, and logistics data.
+- **Built a star-schema analytical model** to support cross-functional analysis across orders, reviews, sellers, products, payments, and logistics data.
 
-- Developed custom DAX measures for Negative Review Rate, Late Delivery Rate, Freight-to-Price Ratio, and seller/category risk scoring.
+- **Developed custom DAX measures** to support customer satisfaction analysis, customer value segmentation, delivery performance monitoring, and seller/category risk identification.
 
-- Implemented risk-tiering logic with minimum-volume thresholds to reduce false positives when identifying high-risk sellers (≥50 orders) and product categories (≥100 orders).
+- **Developed a rule-based customer value segmentation framework** adapted from RFM principles and validated against K-Means clustering to prioritize high-impact customer groups while maintaining business interpretability.
 
-- Designed benchmark-based regional performance analysis comparing underperforming states (e.g., AL, MA, CE) against São Paulo (SP), the platform's delivery-performance benchmark with a 5.9% late-delivery rate.
+- **Implemented risk-tiering logic** with minimum-volume thresholds to reduce false positives when identifying high-risk sellers (≥50 orders) and product categories (≥100 orders).
 
-- Applied an Impact-vs-Effort prioritization framework to translate analytical findings into actionable business recommendations.
+- **Designed benchmark-based regional performance analysis** comparing underperforming states (e.g., AL, MA, CE) against São Paulo (SP), the platform's delivery-performance benchmark with a 5.9% late-delivery rate.
+
+- **Applied an Impact-vs-Effort prioritization framework** to translate analytical findings into actionable business recommendations.
 
 ---
 
