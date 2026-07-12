@@ -78,9 +78,9 @@ The analysis integrates data from 8 relational tables, including orders, order i
 
 ![Executive Overview](images/page1_overview.jpg)
 
-### Customer Value Segmentation
+### Customer Priority Segmentation
 
-![Customer Value Segmentation](images/page2_customer_value_segmentation.jpg)
+![Customer Value Segmentation](images/page2_customer_priority_segmentation.jpg)
 
 ### Customer Satisfaction
 
@@ -102,7 +102,7 @@ The analysis integrates data from 8 relational tables, including orders, order i
 
 ## Technical Highlights
 
-- **Built a star-schema analytical model** to support cross-functional analysis across orders, reviews, sellers, products, payments, and logistics data.
+- **Built a multi-fact dimensional data analytical model** to support cross-functional analysis across orders, reviews, sellers, products, payments, and logistics data.
 
 - **Developed custom DAX measures** to support customer satisfaction analysis, customer value segmentation, delivery performance monitoring, and seller/category risk identification.
 
