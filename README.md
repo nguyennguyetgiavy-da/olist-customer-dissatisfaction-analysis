@@ -118,5 +118,6 @@ The analysis integrates data from 8 relational tables, including orders, order i
 
 ## Project Files
 
+- Interactive Dashboard – Explore the live Power BI report (https://lnkd.in/gea766am)
 - Olist_Report.pdf – Dashboard report for quick viewing.
 - Power BI source file (.pbix) available upon request.
